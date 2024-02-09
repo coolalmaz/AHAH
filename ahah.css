@@ -8,7 +8,7 @@ img{
     display: block;
     object-fit: fill;
     height: 500px;
-    width: 90%;
+    width: 60%;
     margin: auto;
     padding: 20px;
     border-radius: 45px;
@@ -16,17 +16,32 @@ img{
 }
 
 
+html{
+scroll-behavior: smooth ;
+scroll-padding-top: 190px;
+}
 
 body{
     padding-top: 150px;
-    background-color: rgb(24 69 97);
+    background-color: #273b52;
+    
+    
 }
 
 a{
-    color:darkorange;
+    color: wheat;
+}
+
+a:hover{
+    color: darkorange;
+}
+
+a:active{
+    color: #3d848d;
 }
 
 .navbar{
+    color: rgb(187, 167, 131);
     z-index: 100;
     position: fixed;
     top: 0;
@@ -34,11 +49,12 @@ a{
     right: 0;
     margin: auto;
     padding: 10px;
-    border: 2px solid darkorange;
+    border: 2px solid wheat;
     border-radius: 15px;
-    background-color: brown;
+    background-color: rgb(99, 84, 84);
     transform: scale(1);
     transition: transform 1s linear;
+
 }
 
 .navbar:hover{
@@ -50,4 +66,61 @@ a{
 }
 h1{
     margin: auto;
+}
+
+
+.container1{
+    background-color: #b0b0b0;
+    color: #9f5055;
+    border: 2px solid #cbcbcb;
+    border-radius: 25px;
+    padding-left: 30px;
+    margin-bottom: 15px;
+}
+.container1:hover{
+    background: #c9c5c5;
+}
+.container2{
+    background-color: #8e9ba3;
+    color: #1b2024;
+    border: 2px solid #727f8a;
+    border-radius: 25px;
+    padding-left: 30px;
+    margin-bottom: 15px;
+}
+.container2:hover{
+    background: #a3afb9;
+}
+.container3{
+    background-color: #bf0012;
+    color: #fea901;
+    border: 2px solid #ce0513;
+    border-radius: 25px;
+    padding-left: 30px;
+    margin-bottom: 15px;
+}
+.container3:hover{
+    background: #d53300;
+}
+.container4{
+    background-color: #f69184;
+    color: #4b4e9d;
+    border: 2px solid #fe5c8e;
+    border-radius: 25px;
+    padding-left: 30px;
+    margin-bottom: 15px;
+}
+.container4:hover{
+    background: #ffc2c1;
+}
+.container5{
+    background-color: #045969;
+    color: #d5dde2;
+    border: 2px solid #00553c;
+    border-radius: 25px;
+    padding-left: 30px;
+    margin-bottom: 15px;
+}
+.container5:hover{
+    background: #01a070;
 }
