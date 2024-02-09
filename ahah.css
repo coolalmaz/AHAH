@@ -1,23 +1,53 @@
-.zagolovok{
-    max-width: 800px;
-    margin: auto;
-    
-    padding: 20px;
-    border-radius: 25px;
-}
 
+img{
+    box-sizing: border-box;
+}
 
 
 .meme{
-    width: 100%;
-    border-radius: 25px;
+    display: block;
+    object-fit: fill;
+    height: 500px;
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+    border-radius: 45px;
 
 }
 
+
+
 body{
+    padding-top: 150px;
     background-color: rgb(24 69 97);
 }
 
 a{
     color:darkorange;
+}
+
+.navbar{
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding: 10px;
+    border: 2px solid darkorange;
+    border-radius: 15px;
+    background-color: brown;
+    transform: scale(1);
+    transition: transform 1s linear;
+}
+
+.navbar:hover{
+    transform: scale(0.9);
+}
+.block{
+    display: inline-block;
+
+}
+h1{
+    margin: auto;
 }
