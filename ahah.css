@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka&display=swap');
 
 img{
     box-sizing: border-box;
@@ -24,8 +25,16 @@ scroll-padding-top: 190px;
 body{
     padding-top: 150px;
     background-color: #273b52;
-    
-    
+    /*font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: normal;*/
+    font: normal 15px 'Fredoka', sans-serif;
+    line-height: 1.4em;
+    /*text-decoration: line-through;
+    font-style: italic;
+    letter-spacing:4px;
+    word-spacing: 15px;*/
+
 }
 
 a{
