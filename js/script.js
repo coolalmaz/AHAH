@@ -8,7 +8,7 @@ answers[0] = prompt("Как Вас зовут?", "");
 answers[1] = prompt("Какой у Вас никнейм?", "");
 answers[2] = +prompt("Сколько Вам лет?", "");
 
-if (answers[2] < 18 || answers[2] == null || answers[2] == '') {
+if (answers[2] < 18 || answers[2] == null || answers[2] == "") {
     alert( "Иди нахуй, школотрон! АХАХАХАХ");
     close();
 }
@@ -30,7 +30,7 @@ else {
         for (let i = 1; i <= numberOfGames; i++){
             const game = prompt("Назовите одну из последних пройденных видеоигр:", ""),
                   rate = +prompt("На сколько вы её оцените по 10-ти бальной шкале?", "");
-            if (rate != null && rate != '' && rate <= 10 && game != null && game != '' && game.length < 51){
+            if (rate != null && rate != "" && rate <= 10 && game != null && game != "" && game.length < 51){
                 personalGameDB.games[game] = rate;
             }
             else{
