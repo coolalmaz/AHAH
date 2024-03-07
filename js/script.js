@@ -16,6 +16,19 @@ function numberOfGamesAsker(){
     }
 }
 
+function rememberUsersGameRating(){
+    for (let i = 1; i <= numberOfGames; i++){
+        const game = prompt("Назовите одну из последних пройденных видеоигр:", ""),
+              rate = +prompt("На сколько вы её оцените по 10-ти бальной шкале?", "");
+        if (rate != "" && rate <= 10 && game != null && game != "" && game.length < 51){
+            personalGameDB.games[game] = rate;
+        }
+        else{
+            i--;
+        }
+    }
+}
+
 if (answers[2] < 18 || answers[2] == "" || isNaN(answers[2])) {
     alert( "Иди нахуй, школотрон! АХАХАХАХ");
     close();
@@ -35,18 +48,8 @@ else {
     };
 
     if (numberOfGames != 0){
-
-        for (let i = 1; i <= numberOfGames; i++){
-            const game = prompt("Назовите одну из последних пройденных видеоигр:", ""),
-                  rate = +prompt("На сколько вы её оцените по 10-ти бальной шкале?", "");
-            if (rate != "" && rate <= 10 && game != null && game != "" && game.length < 51){
-                personalGameDB.games[game] = rate;
-            }
-            else{
-                i--;
-            }
+        rememberUsersGameRating()  
         }
-    }
 
     console.log(personalGameDB);
 }
