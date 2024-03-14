@@ -18,7 +18,7 @@ function numberOfGamesAsker(){
 
 function rememberUsersGameRating(){
     for (let i = 1; i <= numberOfGames; i++){
-        const game = prompt("Назовите одну из последних пройденных видеоигр:", ""),
+        const game = prompt("Назовите одну из последних пройденных видеоигр:", "").trim(),
               rate = +prompt("На сколько вы её оцените по 10-ти бальной шкале?", "");
         if (rate != "" && rate <= 10 && game != null && game != "" && game.length < 51){
             personalGameDB.games[game] = rate;
